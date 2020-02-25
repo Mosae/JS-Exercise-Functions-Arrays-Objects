@@ -169,14 +169,18 @@ function get3rdCar(inventory) {
  */
 function getCarInfoByIndex(inventory, index) {
   /* code here */
-  const carChoice = inventory.find((index) => {
-    return index === 0;
 
-  });
+  return 'This is a ' + inventory[index].car_make + " " + inventory[index].car_model
+  // const choiceCar = inventory.find(function (index) {
+  //   return index === index;
+  // })
 
-  return 'This is a ${carChoice.car_make} ${carChoice.car_model}';
+  // return 'This is a ${choiceCar.car_make} ${choiceCar.car_model}'
 
 }
+
+
+
 
 
 /**
