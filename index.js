@@ -579,16 +579,16 @@ function getModelYears(inventory) {
  */
 function getOlderCars(inventory, maxYear) {
   /* code here */
-  // let carArr = []
-  // for (var i = 0; i < inventory.length; i++) {
-  //   if (inventory[i].car_year <= maxYear) {
+  let carArr = []
+  for (var i = 0; i < inventory.length; i++) {
+    if (inventory[i].car_year <= maxYear) {
 
-  //     carArr.push(inventory[i].car_make);
+      carArr.push(inventory[i]);
 
-  //   }
+    }
 
-  // }
-  // return carArr;
+  }
+  return carArr;
 }
 
 /**
